@@ -1,6 +1,9 @@
 #!/bin/bash
 
 function install_node() {
+
+	sudo apt update && sudo apt upgrade
+	sudo apt install -y npm snap libssl-dev pkg-config llvm-dev libclang-dev clang plocate screen
  
 	#下载安装docker
 	sudo snap install docker  
